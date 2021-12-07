@@ -1,6 +1,8 @@
 # jwt-api-crud-golang
 
-nama database : db_api_jwt
+Mysql Database
+
+database name : db_api_jwt
 
 go mod init
 
