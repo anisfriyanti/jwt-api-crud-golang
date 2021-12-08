@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"jwtapi-product/models"
+	"jwtapi/models"
 	"net/http"
 	"github.com/gin-gonic/gin"
 )

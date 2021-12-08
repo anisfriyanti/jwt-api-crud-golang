@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"jwtapi-product/models"
+	"jwtapi/models"
 	"net/http"
 	"github.com/gin-gonic/gin"
 )
@@ -91,6 +91,12 @@ func DeleteProduct(c *gin.Context) {
 	}
 
 	models.DB.Delete(&product)
+
+	c.JSON(http.StatusOK, gin.H{"data": true})
+}
+
+func Calltes(c *gin.Context){
+
 
 	c.JSON(http.StatusOK, gin.H{"data": true})
 }

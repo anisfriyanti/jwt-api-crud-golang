@@ -1,8 +1,8 @@
  package controllers
 
 import (
-	"jwtapi-product/auth"
-	"jwtapi-product/models"
+	"jwtapi/auth"
+	"jwtapi/models"
 	"log"
 
 	"github.com/gin-gonic/gin"

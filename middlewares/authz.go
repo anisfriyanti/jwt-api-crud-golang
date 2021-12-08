@@ -1,7 +1,7 @@
  package middlewares
 
 import (
-	"jwtapi-product/auth"
+	"jwtapi/auth"
 	"strings"
 
 	"github.com/gin-gonic/gin"

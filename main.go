@@ -1,9 +1,9 @@
 package main
 
 import (
-	"jwtapi-product/controllers"
-	"jwtapi-product/models"
-	"jwtapi-product/middlewares"
+	"jwtapi/controllers"
+	"jwtapi/models"
+	"jwtapi/middlewares"
 	"github.com/gin-gonic/gin"
 )
 
@@ -25,6 +25,7 @@ func main() {
 		{
 			public.POST("/login", controllers.Login)
 			public.POST("/signup", controllers.Signup)
+			public.GET("/test",controllers.Calltes)
 
 
 			products := api.Group("/data").Use(middlewares.Authz())
@@ -48,5 +49,5 @@ func main() {
 	}
 	
 	// Run the server
-	r.Run(":8081")
+	r.Run()
 }
